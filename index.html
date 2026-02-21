@@ -71,6 +71,15 @@
         .star-rating {
             color: #fbbf24;
         }
+        
+        .coach-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
 <body class="bg-white text-gray-900 font-sans">
@@ -86,7 +95,6 @@
             <div class="hidden md:flex space-x-8 items-center">
                 <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Home</a>
                 <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Features</a>
-                <a href="#benefits" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Benefits</a>
                 <a href="#about" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">About</a>
                 <a href="#testimonials" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">Testimonials</a>
                 <a href="#faq" class="text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium">FAQ</a>
@@ -104,7 +112,6 @@
             <div class="px-4 py-4 space-y-3">
                 <a href="#home" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">Home</a>
                 <a href="#features" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">Features</a>
-                <a href="#benefits" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">Benefits</a>
                 <a href="#about" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">About</a>
                 <a href="#testimonials" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">Testimonials</a>
                 <a href="#faq" class="block text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium py-2">FAQ</a>
@@ -113,336 +120,75 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="relative w-full h-screen flex items-center justify-center overflow-hidden">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600&h=900&fit=crop&q=80'); opacity: 0.25;"></div>
-        <div class="absolute inset-0 hero-overlay"></div>
-        
-        <!-- Hero Content -->
-        <div class="relative z-10 text-center max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight tracking-tight">
-                Small Group Soccer Training
-            </h1>
-            <p class="text-lg sm:text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed font-light">
-                Small group soccer training in Raleigh and Wake County NC
-            </p>
-            <a href="https://smallgroupsoccer.com" class="btn-primary inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                Get Started Today
-            </a>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="py-16 sm:py-20 md:py-24 bg-white">
+    <!-- Hero Section - Two Columns -->
+    <section id="home" class="py-16 sm:py-20 md:py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                    What Makes Us Different
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Experience professional soccer training designed for your improvement and success
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-                <!-- Feature 1: Detailed -->
-                <div class="feature-card bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-500 hover:shadow-xl">
-                    <div class="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-6">
-                        <i class="fas fa-microscope text-blue-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Detailed Analysis</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Every session includes in-depth technical analysis of your playing style. Our coaches break down your movements, positioning, and decision-making to identify specific areas for improvement and create personalized development plans.
-                    </p>
-                </div>
-                
-                <!-- Feature 2: Feedback -->
-                <div class="feature-card bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-500 hover:shadow-xl">
-                    <div class="flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mb-6">
-                        <i class="fas fa-comments text-purple-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Expert Feedback</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Receive constructive, actionable feedback from experienced coaches who understand the game at the highest level. We focus on building your confidence while providing honest assessments to accelerate your growth as a player.
-                    </p>
-                </div>
-                
-                <!-- Feature 3: Intensity -->
-                <div class="feature-card bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-500 hover:shadow-xl">
-                    <div class="flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-6">
-                        <i class="fas fa-fire text-red-600 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-4">High Intensity</h3>
-                    <p class="text-gray-600 leading-relaxed">
-                        Train at competitive intensity levels that push you to your limits. Our sessions are designed to challenge you physically and mentally, preparing you for real match situations and building the mental toughness needed for success.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section id="benefits" class="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-gray-50 to-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                    Benefits You'll Experience
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Transform your game and reach your full potential with our proven training methods
-                </p>
-            </div>
-            
-            <!-- Benefit 1: Improve Technique -->
-            <div class="mb-16 lg:mb-20">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                    <div class="order-2 lg:order-1">
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Improve Your Technique</h3>
-                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                            Master the fundamental skills that separate good players from great ones. Our coaches focus on refining your first touch, passing accuracy, shooting technique, and ball control through repetitive, focused drills that build muscle memory and confidence.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Progressive skill development from basics to advanced techniques</span>
-                            </li>
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Personalized drills targeting your specific weaknesses</span>
-                            </li>
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Video analysis to track your improvement over time</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="order-1 lg:order-2 h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <div class="benefit-image w-full h-full" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop&q=80');"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Benefit 2: Improve Understanding -->
-            <div class="mb-16 lg:mb-20">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                    <div class="h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <div class="benefit-image w-full h-full" style="background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop&q=80');"></div>
-                    </div>
-                    <div>
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Improve Your Understanding</h3>
-                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                            Develop soccer intelligence by understanding positioning, spacing, timing, and tactical awareness. Learn to read the game, anticipate opponent movements, and make smarter decisions on the field that elevate your overall play.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Tactical training focused on game awareness and positioning</span>
-                            </li>
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Small-sided games that simulate real match situations</span>
-                            </li>
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Coaching insights on decision-making and game strategy</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Benefit 3: Build Confidence -->
-            <div>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-                    <div class="order-2 lg:order-1">
-                        <h3 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">Build Your Confidence</h3>
-                        <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                            Gain the mental strength and self-assurance needed to perform under pressure. Through progressive challenges and positive reinforcement, you'll develop the confidence to take risks, express yourself on the field, and compete at higher levels.
-                        </p>
-                        <ul class="space-y-4">
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Supportive environment that encourages growth and learning</span>
-                            </li>
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Recognition of progress and achievement in each session</span>
-                            </li>
-                            <li class="flex items-start space-x-4">
-                                <i class="fas fa-check-circle text-green-500 text-xl mt-1 flex-shrink-0"></i>
-                                <span class="text-gray-700">Mental training techniques for pressure situations</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="order-1 lg:order-2 h-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                        <div class="benefit-image w-full h-full" style="background-image: url('https://images.unsplash.com/photo-1552109067-24e9a0a0d1e7?w=800&h=600&fit=crop&q=80');"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Section -->
-    <section class="py-16 sm:py-20 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                    See Our Training in Action
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Watch how our coaching methods transform players and build winning mentality
-                </p>
-            </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
-                    <iframe 
-                        class="absolute top-0 left-0 w-full h-full"
-                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
-                        title="Small Group Soccer Training"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-white to-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                    About Us
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Dedicated to developing the next generation of soccer players in Raleigh and Wake County
-                </p>
-            </div>
-            
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <div class="h-96 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                    <div class="benefit-image w-full h-full" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&h=600&fit=crop&q=80');"></div>
+                <!-- Left Column -->
+                <div class="flex flex-col items-center">
+                    <a href="#contact" class="btn-primary inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 mb-12">
+                        Contact Us
+                    </a>
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg w-full">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4">Small Group Soccer Training</h2>
+                        <p class="text-gray-600 text-lg leading-relaxed">
+                            Expert coaching in Raleigh and Wake County NC. We provide personalized small group training that improves your technique, tactical understanding, and confidence through detailed feedback and intense, competitive sessions designed to accelerate your development as a player.
+                        </p>
+                    </div>
                 </div>
                 
+                <!-- Right Column - Video -->
                 <div>
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Our Story</h3>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-8">
-                        Small Group Soccer was founded with a simple mission: to provide high-quality, personalized soccer training to players of all levels in Raleigh and Wake County. Our founder, Marcus, recognized a gap in the market for training that combines professional coaching methods with a supportive, community-focused environment. Starting with just a handful of dedicated players, we've grown into a thriving program that has helped hundreds of young athletes reach their soccer goals while building lasting friendships and memories.
-                    </p>
-                    
-                    <h3 class="text-3xl font-bold text-gray-900 mb-6">Our Mission & Vision</h3>
-                    <p class="text-gray-600 text-lg leading-relaxed">
-                        We believe that every player has the potential to improve, and our mission is to unlock that potential through expert coaching, detailed feedback, and an intense training environment. We're committed to developing not just better soccer players, but confident, resilient individuals who understand the value of hard work, teamwork, and perseverance. Our vision is to be the premier small group soccer training program in North Carolina, known for producing technically skilled, tactically intelligent, and mentally tough players who excel both on and off the field.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 sm:py-20 md:py-24 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
-                    What Players Are Saying
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Real stories from players who have transformed their game with our training
-                </p>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-                <!-- Testimonial 1 -->
-                <div class="testimonial-card bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-500 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex space-x-1">
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
+                    <div class="max-w-2xl">
+                        <div class="relative w-full bg-black rounded-2xl overflow-hidden shadow-2xl" style="padding-bottom: 56.25%;">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1"
+                                title="Small Group Soccer Training"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
                         </div>
-                    </div>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        "Marcus's coaching completely transformed my understanding of the game. The detailed feedback after each session helped me identify specific areas to improve, and within three months I was selected for the competitive team. The small group setting meant I got personalized attention that I wouldn't get anywhere else."
-                    </p>
-                    <div class="border-t border-gray-200 pt-4">
-                        <p class="font-bold text-gray-900">Jordan Mitchell</p>
-                        <p class="text-gray-600">Competitive Club Player, Age 16</p>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 2 -->
-                <div class="testimonial-card bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-500 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex space-x-1">
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        "I was intimidated by soccer at first, but the supportive environment at Small Group Soccer made all the difference. The coaches really care about your development, not just your performance. I've built so much confidence and actually enjoy playing now. My technical skills have improved dramatically too!"
-                    </p>
-                    <div class="border-t border-gray-200 pt-4">
-                        <p class="font-bold text-gray-900">Sarah Chen</p>
-                        <p class="text-gray-600">Recreational Player, Age 14</p>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 3 -->
-                <div class="testimonial-card bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-500 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex space-x-1">
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        "As a parent, I was looking for a program that would push my son athletically while also building character. Small Group Soccer delivers on both fronts. The intensity of the training is evident, but so is the care the coaches take in developing the whole player. Best investment in his soccer development we've made."
-                    </p>
-                    <div class="border-t border-gray-200 pt-4">
-                        <p class="font-bold text-gray-900">David Thompson</p>
-                        <p class="text-gray-600">Parent, Coach</p>
-                    </div>
-                </div>
-                
-                <!-- Testimonial 4 -->
-                <div class="testimonial-card bg-white border-2 border-gray-100 rounded-2xl p-8 hover:border-blue-500 hover:shadow-xl">
-                    <div class="flex items-center mb-4">
-                        <div class="flex space-x-1">
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                            <i class="fas fa-star star-rating"></i>
-                        </div>
-                    </div>
-                    <p class="text-gray-600 text-lg leading-relaxed mb-6">
-                        "I was returning to soccer after a 5-year break and wasn't sure if I could still compete. The progressive training approach and positive feedback made me feel like I belonged. In just 6 weeks, my fitness and confidence skyrocketed. I'm now playing better than I ever have!"
-                    </p>
-                    <div class="border-t border-gray-200 pt-4">
-                        <p class="font-bold text-gray-900">Alex Rodriguez</p>
-                        <p class="text-gray-600">Adult Recreational Player</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FAQ Section -->
+    
+
+    
+
+    
+
+    <!-- Bio Section -->
+    <section id="bio" class="py-12 sm:py-16 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="flex justify-center">
+                    <img src="https://res.cloudinary.com/djuh6eqct/image/upload/v1769267520/imageedit_1_8735105176_suphfo.png" alt="Coach Marcus" class="coach-image shadow-lg">
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Meet Your Coach</h3>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        With years of experience in professional soccer coaching and a passion for developing young talent, I'm dedicated to helping every player reach their full potential. My approach combines technical expertise with personalized attention to ensure you get the coaching you deserve.
+                    </p>
+                    <h4 class="text-lg font-bold text-gray-900 mb-3">Background</h4>
+                    <ul class="text-gray-600 leading-relaxed space-y-2">
+                        <li class="flex items-start"><span class="mr-3">•</span><span>Professional soccer coaching experience</span></li>
+                        <li class="flex items-start"><span class="mr-3">•</span><span>Specialized in player development</span></li>
+                        <li class="flex items-start"><span class="mr-3">•</span><span>Passion for developing young talent</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- FAQ Section -->
     <section id="faq" class="py-16 sm:py-20 md:py-24 bg-gradient-to-b from-gray-50 to-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight">
                     Frequently Asked Questions
                 </h2>
                 <p class="text-lg text-gray-600">
@@ -506,31 +252,11 @@
         </div>
     </section>
 
-    <!-- CTA Section Before Contact -->
-    <section class="relative py-20 md:py-28 overflow-hidden">
-        <!-- Background Image with Overlay -->
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1600&h=900&fit=crop&q=80'); opacity: 0.2;"></div>
-        <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-85"></div>
-        
-        <!-- Content -->
-        <div class="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-                Ready to Transform Your Game?
-            </h2>
-            <p class="text-lg md:text-xl text-gray-100 mb-10 leading-relaxed">
-                Join hundreds of players who have improved their technique, understanding, and confidence with Small Group Soccer Training
-            </p>
-            <a href="https://smallgroupsoccer.com" class="btn-primary inline-block bg-white hover:bg-gray-100 text-blue-600 font-bold py-4 px-10 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
-                Start Your Training Journey
-            </a>
-        </div>
-    </section>
-
     <!-- Contact Section -->
-    <section id="contact" class="py-16 sm:py-20 md:py-24 bg-white">
+    <section id="contact" class="py-12 sm:py-16 md:py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 sm:mb-16">
-                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 tracking-tight">
                     Get in Touch
                 </h2>
                 <p class="text-lg text-gray-600">
@@ -643,7 +369,6 @@
                     <ul class="space-y-3">
                         <li><a href="#home" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Home</a></li>
                         <li><a href="#features" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Features</a></li>
-                        <li><a href="#benefits" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Benefits</a></li>
                         <li><a href="#about" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">About Us</a></li>
                         <li><a href="#testimonials" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">Testimonials</a></li>
                         <li><a href="#faq" class="text-gray-400 hover:text-blue-400 transition-colors duration-300">FAQ</a></li>
