@@ -1,0 +1,38 @@
+# robots.txt for Small Group Soccer Training
+
+# Allow all search engines to crawl everything
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://smallgroupsoccer.com/sitemap.xml
+
+# AI Crawler specific rules
+# Allow GPTBot (ChatGPT web crawler)
+User-agent: GPTBot
+Allow: /
+Allow: /llms.txt
+
+# Allow ClaudeBot (Anthropic's Claude)
+User-agent: ClaudeBot
+Allow: /
+Allow: /llms.txt
+
+# Allow PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+Allow: /llms.txt
+
+# Allow Google-Extended (Bard/Gemini)
+User-agent: Google-Extended
+Allow: /
+Allow: /llms.txt
+
+# Allow CCBot (Common Crawl - used by many AI companies)
+User-agent: CCBot
+Allow: /
+Allow: /llms.txt
+
+# Crawl-delay for polite crawling (optional)
+# User-agent: *
+# Crawl-delay: 1

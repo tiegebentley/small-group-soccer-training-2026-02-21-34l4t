@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://smallgroupsoccer.com/</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://res.cloudinary.com/djuh6eqct/image/upload/v1769267520/imageedit_1_8735105176_suphfo.png</image:loc>
+            <image:title>Coach Marcus - Youth Soccer Training Specialist</image:title>
+            <image:caption>Expert soccer coach with 8+ years experience in Raleigh NC</image:caption>
+        </image:image>
+        <video:video>
+            <video:thumbnail_loc>https://i.ytimg.com/vi/ohIlfybSabA/maxresdefault.jpg</video:thumbnail_loc>
+            <video:title>Youth Soccer Training for 11 Year Old Boys</video:title>
+            <video:description>See our training methods in action for 11 year old boys in Raleigh, NC</video:description>
+            <video:content_loc>https://www.youtube.com/watch?v=ohIlfybSabA</video:content_loc>
+            <video:player_loc>https://www.youtube.com/embed/ohIlfybSabA</video:player_loc>
+        </video:video>
+    </url>
+
+    <!-- Blog Landing Page -->
+    <url>
+        <loc>https://smallgroupsoccer.com/blog.html</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog Articles -->
+    <url>
+        <loc>https://smallgroupsoccer.com/blog/getting-started-with-our-platform.html</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Privacy Policy -->
+    <url>
+        <loc>https://smallgroupsoccer.com/privacy.html</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- Terms of Service -->
+    <url>
+        <loc>https://smallgroupsoccer.com/terms.html</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!-- llms.txt for AI search engines -->
+    <url>
+        <loc>https://smallgroupsoccer.com/llms.txt</loc>
+        <lastmod>2026-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+</urlset>
