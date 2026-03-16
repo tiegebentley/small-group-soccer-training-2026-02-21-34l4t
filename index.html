@@ -485,8 +485,9 @@
                 <!-- Contact Form -->
                 <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 shadow-lg">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h3>
-                    <!-- To activate: Sign up at https://formspree.io and replace the action URL below with your form endpoint -->
-                    <form class="space-y-5" action="https://formspree.io/f/marcus@smallgroupsoccer.com" method="POST">
+                    <!-- Contact form powered by Web3Forms -->
+                    <form class="space-y-5" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="a31c8d2c-8c9f-45f3-96c1-506100a92567">
                         <div>
                             <label for="name" class="block text-sm font-semibold text-gray-900 mb-2">Parent/Guardian Name</label>
                             <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border-2 border-gray-200 focus:border-blue-500 focus:outline-none transition-colors duration-300" placeholder="Your name">
