@@ -11,12 +11,12 @@
         <priority>1.0</priority>
         <image:image>
             <image:loc>https://res.cloudinary.com/djuh6eqct/image/upload/v1769267520/imageedit_1_8735105176_suphfo.png</image:loc>
-            <image:title>Coach Marcus - Youth Soccer Training Specialist</image:title>
+            <image:title>Coach Marcus - U11 Soccer Training Specialist</image:title>
             <image:caption>Expert soccer coach with 8+ years experience in Raleigh NC</image:caption>
         </image:image>
         <video:video>
             <video:thumbnail_loc>https://i.ytimg.com/vi/ohIlfybSabA/maxresdefault.jpg</video:thumbnail_loc>
-            <video:title>Youth Soccer Training for 11 Year Old Boys</video:title>
+            <video:title>U11 Soccer Training Raleigh NC - Training Methods for 11 Year Old Boys</video:title>
             <video:description>See our training methods in action for 11 year old boys in Raleigh, NC</video:description>
             <video:content_loc>https://www.youtube.com/watch?v=ohIlfybSabA</video:content_loc>
             <video:player_loc>https://www.youtube.com/embed/ohIlfybSabA</video:player_loc>
